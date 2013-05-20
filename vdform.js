@@ -1,10 +1,11 @@
 /**************************************************************
- @Name : jQuery-vdform 1.0 修正版(包含ajax校验修正)
+ @Name : jQuery-vdform 1.1
  @author: 红叶
  @date: 2013-03-22
  @QQ: 237420759
  @blog: www.vdform.com 
- @desc: 
+ @git: https://github.com/nanzhang237420759/vdform/blob/master/vdform.js
+ @desc: 加入了获取返回值方法checkFormResult
  *************************************************************/ 
 (function ($){
 	var xOffset = 15; // x 偏移像素
@@ -466,10 +467,6 @@
 			return true;
 	}
 
-
-	function CLASS(options){
-		this.init(options)
-	};
 
 	/*校验表单方法*/
 	$.fn.checkForm = function(showType) {
